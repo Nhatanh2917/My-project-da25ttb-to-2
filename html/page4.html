@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <title>Hóa đơn mua hàng</title>
+    <meta charset="UTF-8">
+    <link rel ="stylesheet" href="../css/style3.css">
+    <!--<link rel="stylesheet" href="../css/style01.css">-->
+</head>
+<body>
+    <!--Tạo cấu trúc bảng Hóa đơn mua hàng-->
+    <table>
+        <tr>
+            <th>STT</th>
+            <th>Tên hàng</th>
+            <th>Số lượng</th>
+            <th>Đơn giá</th>
+            <th>Dvt</th>
+            <th>Thành tiền</th>
+        </tr>
+        <tr>
+            <td >1</td>
+            <td class="tenhang">Mì gói</td>
+            <td class =soluong>10</td>
+            <td class="dongai">5000</td>
+            <td>Gói</td>
+            <td class="thanhtien">50000</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td class="tenhang">Sữa tươi</td>
+            <td class="soluong">10</td>
+            <td class="dongai">7000</td>
+            <td>bịch</td>
+            <td class="thanhtien">70000</td>
+        </tr> 
+        <tr>
+            <td>3</td>
+            <td class="tenhang">Trà sữa</td>
+          <td class="soluong">10</td>
+          <td class="dongai">30000</td>
+          <td>Ly</td>
+          <td class="thanhtien">300000</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td class="tenhang">Kem đánh răng</td>
+            <td class="soluong">10</td>
+            <td class="dongai">20000</td>
+            <td>Tuýp</td>
+            <td class="thanhtien">200000</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td class="tenhang">Sữa tắm</td>
+            <td class="soluong">10</td>
+            <td class="dongai">120000</td>
+            <td>Chai</td>
+            <td class="thanhtien">12000000</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td class="tenhang">Dầu gội</td>
+            <td class="soluong">2</t>
+            <td class="dongai">95000</td>
+            <td>Chai</td>
+            <td class="thanhtien">190000</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td class="tenhang">Coca Cola</td>
+            <td class="soluong">6</td>
+            <td class="dongai">10000</td>
+            <td>Lon</td>
+                <td>60000</td>
+        </tr>
+            <td>8</td>
+            <td class="tenhang">Pepsi</td>
+            <td class="soluong">6</td>
+            <td class="dongai">10000</td>
+            <td>Lon</td>
+            <td class="thanhtien">60000</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td class="tenhang">Ô long</td>
+            <td class="soluong">4</td>
+            <td class="dongai">15000</td>
+            <td>Chai</td>
+            <td class="thanhtien">60000</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td class="tenhang">Bánh tráng</td>
+            <td class="soluong">3</td>
+            <td class="dongai">25000</td>
+            <td>Bịch</td>
+            <td class="thanhtien">75000</td>
+        </tr>
+        <tr>
+            <td colspan = "5">Tổng thanh toán</td>
+            <td id = "tongthanhtoan">560000</td>
+        </tr>
+    </table>
+        <script>
+             //Truy xuất
+             const $1 =document.getElementsByClassName("soluong")
+             const dg =document.getElementsByClassName("dongia")
+             const tt =document.getElementsByClassName("thanhtien")
+            //Khởi tạo
+            let tongthanhtoan = 0;
+
+            //Duyệt mảng
+            for(let i= 0; i < s1,lemgth ;i++)
+            {
+                let thanhtien =parseInt(sl[i].innerText)* parseInt(dg[i].innerText);
+                tt[i].innerText = thanhtien;
+                tongthanhtoan += thanhtien;
+            }
+            //cập nhập giá trị
+            document.ghetElementById("tongthanhtoan").innerText =tongthanhtoan;
+        </script>
+    </body>
+</html>

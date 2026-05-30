@@ -1,0 +1,63 @@
+<!DOCYPE html>
+<html lang ="vi">
+    <head>
+        <title>Thiết kế form dăng ký </title>
+        <meta chraset = "utf-8">
+		<link rel="stylesheet" href="../css/style02.css">
+    </head>
+    <body>
+		< class ="container">
+	 <form id ="frmLogin">
+		<h2 id = "title">Đăng ký<h2>
+			<div class = "form-group">
+				<label for = "txtUsername">Họ Và Tên:</label>
+				<input type = "text" id = "txtUsername" name = "txtUsername">
+		</div>
+			<div class ="form-group">
+				<label for="txtDate">Ngày Tháng Năm Sinh:</label>
+				<input type="date">
+		</div>
+			<div class="form-group">
+    			<label class="form-label">Lớp:</label>
+				<input type="lop" id="txtlop" name="txtlop">
+    	</div>
+			<div class="form-group">
+    			<label class="form-label">Mã số sinh viên:</label>
+       		 	<input type="MSSV" id="txtmssv" name="txtmssv">
+       </div>
+			<div class="form-group">
+				<label for="txtEmail">Email:</label>
+				<input type="email" id="txtEmail" name="txtEmail">
+		</div>
+		<div>
+			<label>Số Điện Thoại:</label>
+			<input type="dienthoai"id="txtdienthoai" name="sdt">
+		</div>
+		<div>
+			<label>Giới Tính:</label>
+			<input type="radio" name="gioitinh" value="Nam"> Nam
+			<input type="radio" name="gioitinh" value="Nu"> Nữ
+		</div>
+			<div class="form-group">
+				<label for="txtAddress">Địa Chỉ:</label>
+				<input type="text" id="txtdiachi">
+		</div>
+        <div class="form-group">
+                <label class="form-label">Ảnh đại diện:</label>
+                    <input type="file" id="txtanhdaidien">
+                </div>
+		<div class="form-group">
+			<label>Sở Thích:</label>
+				<input type="checkbox" name="hobby" value="caulong"> Cầu lông
+				<input type="checkbox" name="hobby" value="amnhac"> Âm nhạc
+				<input type="checkbox" name="hobby" value="dulich"> Du lịch
+		</div>
+		<div class = "form-group">
+			<label for = "txtPassword">Mật Khẩu:</label>
+			<input type = "text" id = "txtPassword" name = "txtPassword">
+		</div>
+        <input type ="submit" name = "sbLogin" id = "sbLogin" value ="login">
+		<input type ="reset" name = "rsCancel" id = "rsCancle" value ="Cancel">
+	 </form>
+    </body>
+</html>
