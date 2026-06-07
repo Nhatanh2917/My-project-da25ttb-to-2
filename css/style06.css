@@ -38,6 +38,12 @@ h2{
     font-weight: bold;
 }
 
+.product-list{
+    display: flex;
+    gap: 20px;
+    overflow-x: auto; 
+}
+
 .mota{
     color: #666;
     line-height: 1.5;
